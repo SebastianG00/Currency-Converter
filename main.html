@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Part 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Darker+Grotesque:wght@300..900&family=Silkscreen&display=swap" rel="stylesheet">
+    
+    <!-- You can find other web fonts at https://fonts.google.com/ ! -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="slogan">Over 5 hour history with Currency Data</div>
+        <label class="switch">
+          <input type="checkbox">
+          <div class="slider">
+          
+            <div class="circle"></div>
+          </div>
+        </label>
+      </header>
+  
+      <!-- Main Section -->
+      <main>
+        <div class="converter-container">
+            <div class="currency-row">
+                <div class="from">
+                    <label for="from-currency">From:</label>
+                    <select id="from-currency">
+                        <option id = "usd-clickable" value="USD">USD</option>
+                        <option id = "eur-clickable" value="EUR">EUR</option>
+                        <option id = "custom-currency-1-clickable" value="JPY">JPY</option>
+                        <option id = "custom-currency-2-clickable" value="SOL">SOL</option>
+                        <option id = "custom-currency-3-clickable" value="HKD">HKD</option>
+
+                    </select>
+                </div>
+                <div class="to">
+                    <label for="to-currency">To:</label>
+                    <select id="to-currency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="SOL">SOL</option>
+                        <option value="HKD">HKD</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="currency-row">
+                <input id="amount-textbox" type="text"  placeholder="Enter amount">
+                <span>↔</span>
+                <span id="converted-amount" value="" >-</span>
+            </div>
+    
+            
+
+            <div id="error-message" style="display:none"></div>
+
+    
+            <button id="calculate-clickable">Calculate</button>
+        </div>
+      </main>
+  
+      <!-- Footer -->
+      <footer>
+        <div class="imagen">
+          <img src="Subject.png" alt="Bitmoji" class="bitmoji">
+        </div>
+        <div class="item">
+          <p>SEBASTIAN</p>
+        </div>
+        <div class="item">
+          <p>714-398-0706</p>
+        </div>
+      </footer>
+    </div>
+    
+
+    <!-- LINK JS -->
+    <script src="script.js"></script>
+
+    
+  </body>
+</html>
